@@ -13,11 +13,12 @@
 3. 删除：删除原模板表格类页面：`指导教师意见`，`评阅人意见`，`答辩委员会意见`，`毕业论文内容介绍`；
 4. 页码：页码标注在页面底端页脚外侧，修改摘要页码为大写英文字母，正文页码从阿拉伯数字1起始，页眉居中打印“山东师范大学学士学位论文”；
 5. 字体：三级标题字体变化：一级标题（三号粗体），二级标题（小三粗黑体），三级标题（四号粗黑体），正文（小四号宋体），英文（Times New Roman），图表标题（五号宋体）；
-6. 页边距：页边距修改位上左右（2.5cm）下（2cm）；
-7. 图表：图表编号按章顺序编号（如图1-1），标题图下表上。
+6. 页边距：页边距修改为上左右（2.5cm）下（2cm）；
+7. 图表：图表编号按章顺序编号（如``图1-1''），标题图下表上。
 
 ##### 相关资源
-1. [山东师范大学本科生毕业设计封面](http://sdnu.co.cnki.net/Details.html?dp=sdnu&noticeId=1032&typeId=1224)
+1. [山东师范大学本科生毕业论文（设计）管理系统](http://sdnu.co.cnki.net/Login.html?dp=&r=1618887374195)
+2. [山东师范大学本科生毕业设计封面](http://sdnu.co.cnki.net/Details.html?dp=sdnu&noticeId=1032&typeId=1224)
 2. [山东师范大学本科生毕业论文封面](http://sdnu.co.cnki.net/Details.html?dp=sdnu&noticeId=1031&typeId=1224)
 3. [独创声明和学位论文版权使用授权书](http://sdnu.co.cnki.net/Details.html?dp=sdnu&noticeId=1030&typeId=1224)
 
@@ -35,9 +36,9 @@
 
 ##### 目录说明
 
-- 本文件所在目录为模版主目录，包含 sdnubachelor.cls 格式文件与 sdnubachelor.tex 源文件以及编译生成的 PDF 文件。
-- ./data/img/ 目录为正文图片存储目录。
-- ./data/resource/ 目录为资源目录，上表中除 sdnubachelor.tex 外其余 *.tex 文件均在此目录中，需要使用者关注编辑的 *.tex 文件需在此打开。
+- 本文件所在目录为模版主目录，包含 `sdnubachelor.cls` 格式文件与 `sdnubachelor.tex` 源文件以及编译生成的 PDF 文件。
+- `./data/img/` 目录为正文图片存储目录。
+- `./data/resource/` 目录为资源目录，上表中除 `sdnubachelor.tex` 外其余 `*.tex` 文件均在此目录中，需要使用者关注编辑的 `*.tex` 文件需在此打开。
 - 编译过程中会生成相关过程文件与输出文件，可酌情删除；模板建议二次编译。
 
 
@@ -68,11 +69,6 @@
 - LaTeX编译器：XeLaTeX
 - 建议编辑器：TeXstudio
 
-
-
 ---
-
-
-
 
 更新日期：2021-04-20 10:47:59 
