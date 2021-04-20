@@ -1,0 +1,70 @@
+%!TEX program = xelatex
+\documentclass[hyperref,UTF8,12pt, twoside]{sdnubachelor}
+
+\begin{document}
+	
+%---信息部分-------------------------------------------------------------------------------
+	\sdnutitle{糯米排骨制作分析与算法研究}{English Title}
+	\sdnuauthor{王小豆}{Xiaodou Wang}{201711010200}
+	\sdnumentor{大脑袋}
+	\sdnuinfo{信息科学与工程学院}{计算机科学与技术专业}{计工本1702}
+	\sdnudate{2021}{4}{15}
+	\sdnukeyw{关键字1；关键字2；关键字3；关键字4}{key1, key2, key3, key4}
+	
+%-----封面部分(无需封面请注释\include一行)-----
+	{
+		\newlength{\nlength}
+		\setlength{\nlength}{10cm}	%封面题目线长度，根据题目长短自行调整，默认10cm
+		\include{data/resource/cover}
+	}
+
+%-----声明部分(无需声明请注释\include一行)-----
+	{
+		\include{data/resource/declaration}
+	}
+
+%-----目录生成部分-----
+	{
+		\begin{titlepage}
+			\pagestyle{empty}
+			\tableofcontents
+		\end{titlepage}
+	}
+	
+%-----摘要部分(编辑摘要请前往./data/resource/abstract.tex，无需摘要请注释\include一行)-----
+{
+	\sdnuinfoen{Shandong Normal University}{School of Information Science and Engineering}
+	\sdnuclassification{TP393} %中图分类号
+	\pagenumbering{Alph}
+	\include{data/resource/abstract}
+}
+
+%-----正文部分，编辑正文请前往./data/resource/article.tex-----
+	{
+		\setlength{\abovecaptionskip}{5pt}
+		\setlength{\belowcaptionskip}{5pt}
+		\pagenumbering{arabic}
+		\setcounter{page}{1}
+		\captionsetup{font={small,stretch=1.25}, justification=centering}
+		\setlength{\baselineskip}{25pt}
+		\include{data/resource/article}
+	}
+
+\titleformat{\section}{\centering\Large\bfseries}{}{0pt}{}[\vspace*{10pt}]
+%-----参考文献引入部分，修改参考文献请修改./data/resource/bibliography.tex-----
+	{	
+		\include{data/resource/bibliography}
+	}
+
+%---附录引入部分，修改附录内容请修改./data/resource/appendix.tex，无需附录请注释\include部分--
+	{
+		\include{data/resource/appendix}
+	}
+
+%--致谢部分，修改致谢内容请修改./data/resource/thanks.tex，无需附录请注释\include部分--
+	{
+	\include{data/resource/thanks}
+	}
+
+
+\end{document}
