@@ -17,20 +17,40 @@
 
 \LoadClassWithOptions{ctexart}
 
-\RequirePackage[a4paper,top=2.5cm,bottom=2cm,left=2.5cm,right=2.5cm]{geometry}
+
+\RequirePackage[a4paper,top=2.5cm,bottom=2cm,left=2.5cm,right=2cm]{geometry}
+
+\RequirePackage{ifthen}
+\DeclareRobustCommand{\sdnuprint}{}
+\DeclareRobustCommand{\sdnupaperprint}[1]{
+	\renewcommand{\sdnuprint}{#1}
+}
+
+\DeclareRobustCommand{\sdnuseccenter}{}
+\DeclareRobustCommand{\sdnusectioncenter}[1]{
+	\renewcommand{\sdnuseccenter}{#1}
+}
+
 \pagestyle{plain}
 
 \RequirePackage{tabu}
 \RequirePackage{makecell}
 
+% \ifthenelse{\sdnuprint=0}{\RequirePackage[a4paper,top=2.5cm,bottom=2cm,left=2.5cm,right=2.5cm]{geometry}}{\RequirePackage[a4paper,top=2.5cm,bottom=2cm,left=2.5cm,right=2cm]{geometry}}
+
 \DeclareRobustCommand{\xiaosi}{\fontsize{12pt}{\baselineskip}\selectfont}  
 \DeclareRobustCommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}  
 
-%------------------------------
+% \newcommand{\oddpage}[1]{Number #1 is %
+% \ifthenelse{\isodd{#1}}{odd}{even}  }
+% \oddeven{4}.\\ 
+% \oddeven{5}
+
+
 \RequirePackage{setspace}
 \RequirePackage{titlesec}
 \titleformat{\section}
-{\raggedright\Large\bfseries}
+{\centering\Large\bfseries}
 {\thesection .\quad}
 {0pt}
 {}
@@ -62,6 +82,27 @@
 \fancyhf{}
 \fancyhead[C]{山东师范大学学士学位论文}
 \fancyfoot[RO, LE]{\thepage}
+
+% \newif\ifsdnuprint\sdnuprintfalse
+% \newcommand{\sdnu@print}{}
+% \renewcommand{\print}[1]{\sdnuprinttrue\renewcommand{\sdnu@print}{#1}}
+% \def\blprint{\xdef\@thefnmark{}\@footnotetext}
+% \ifsysuthesisthanks
+% \blfootnote{\wuhao\sdnu@print}
+% \fi
+
+% \newcommand{\@finishdate}{}
+% \newcommand{\finishdate}[1]{\renewcommand{\@finishdate}{#1}}
+
+
+
+% \renewcommand\paperprint{%
+% \ifnum\@sdnupaperprint = 1 \newpage
+% \else {}
+% \fi}
+
+% \makeatother
+
 
 \RequirePackage{titletoc}
 \hypersetup{hidelinks}

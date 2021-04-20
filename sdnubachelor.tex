@@ -11,16 +11,25 @@
 	\sdnudate{2021}{4}{15}
 	\sdnukeyw{关键字1；关键字2；关键字3；关键字4}{key1, key2, key3, key4}
 	
+	% 文档格式设置
+	\sdnupaperprint{0}  % 是否为打印版本，打印版会在部分页面后加空页（判断奇偶），满足双面打印要求，1代表打印版本，0代表电子版
+	\sdnusectioncenter{1}  % 标题是否居中，1代表居中，0代表居左
+	
 %-----封面部分(无需封面请注释\include一行)-----
 	{
 		\newlength{\nlength}
 		\setlength{\nlength}{10cm}	%封面题目线长度，根据题目长短自行调整，默认10cm
 		\include{data/resource/cover}
+		\ifnum\sdnuprint=1 {\pagestyle{empty}~\newpage}
+		\fi
 	}
 
+	
 %-----声明部分(无需声明请注释\include一行)-----
 	{
 		\include{data/resource/declaration}
+		\ifnum\sdnuprint=1 {\pagestyle{empty}~\newpage}
+		\fi
 	}
 
 %-----目录生成部分-----
@@ -28,19 +37,33 @@
 		\begin{titlepage}
 			\pagestyle{empty}
 			\tableofcontents
+			\label{content}
 		\end{titlepage}
+		\ifthenelse{\sdnuprint=1}{\ifthenelse{\isodd{\pageref{content}}}{\pagestyle{empty}~\newpage}{}}{}
 	}
-	
+
 %-----摘要部分(编辑摘要请前往./data/resource/abstract.tex，无需摘要请注释\include一行)-----
 {
 	\sdnuinfoen{Shandong Normal University}{School of Information Science and Engineering}
 	\sdnuclassification{TP393} %中图分类号
 	\pagenumbering{Alph}
 	\include{data/resource/abstract}
+	
+	\ifthenelse{\sdnuprint=1}{\ifthenelse{\equal{\pageref{abstract}}{A}}{\pagestyle{empty}~\newpage}{}}{}
+	
+%	\pageref{unknown}=A {\pagestyle{empty}~\newpage}
+
+	
 }
 
 %-----正文部分，编辑正文请前往./data/resource/article.tex-----
-	{
+%\ifnum\sdnuseccenter=0 {\titleformat{\section}{\raggedright\Large\bfseries}{\thesection .\quad}{0pt}{}}
+%\else 
+%\fi
+\ifnum\sdnuseccenter=0 \titleformat{\section}{\raggedright\Large\bfseries}{\thesection .\quad}{0pt}{}
+\fi
+	{	
+		
 		\setlength{\abovecaptionskip}{5pt}
 		\setlength{\belowcaptionskip}{5pt}
 		\pagenumbering{arabic}
