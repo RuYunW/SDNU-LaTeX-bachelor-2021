@@ -63,6 +63,11 @@
 \titlespacing{\subsection}{0pt}{3pt}{0pt}
 \titlespacing{\subsubsection}{0pt}{3pt}{0pt}
 
+\RequirePackage{enumitem}
+\setenumerate[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=5pt}
+\setitemize[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=5pt}
+\setdescription{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=5pt}
+
 \RequirePackage{amsmath}
 \numberwithin{figure}{section}
 \numberwithin{table}{section}
