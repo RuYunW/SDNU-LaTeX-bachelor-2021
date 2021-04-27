@@ -33,7 +33,8 @@
 3. 在 `./data/resource/article.tex` 撰写正文；
 3. 在 `./data/resource/bibliography.tex`中撰写参考文件，并可在正文中引用。
 4. 在 `./data/resource/appendix.tex` 中撰写附录；
-5. 在 `./data/resource/thanks.tex` 中撰写致谢。
+5. 在 `./data/resource/thanks.tex` 中撰写致谢；
+6. 数字加粗请使用`\textBF{·}`命令包裹。
 
 
 ##### 目录说明
@@ -61,11 +62,11 @@
 
 ---
 
-#### 开发说明####
+#### 开发说明
 
 本模板基于 CTeX 的 ctexart 标准文档类开发。请确保 CTeX 安装完整，并包含有 ctexart 文档类；二者已包含在 Tex Live 发行版中，建议安装 Tex Live 的离线完整版。规范参照山东师范大学本科生学位论文基本格式要求（2021）。
 
-#### 编译环境说明####
+#### 编译环境说明
 
 - 编译系统发行版：TeX Live（2017或更高）
 - LaTeX编译器：XeLaTeX
