@@ -39,6 +39,13 @@
 \DeclareRobustCommand{\xiaosi}{\fontsize{12pt}{\baselineskip}\selectfont}  
 \DeclareRobustCommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}  
 
+\RequirePackage{algorithmic}
+\RequirePackage{algorithm}
+
+\floatname{algorithm}{算法}  
+\renewcommand{\algorithmicrequire}{\textbf{输入:}}  
+\renewcommand{\algorithmicensure}{\textbf{输出:}} 
+
 \RequirePackage{setspace}
 \RequirePackage{titlesec}
 \titleformat{\section}
