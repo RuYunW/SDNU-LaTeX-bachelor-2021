@@ -112,8 +112,8 @@
 \newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}}
 \RequirePackage{graphicx}
 \graphicspath{{data/img/}}
-
-\usepackage{caption}
+\RequirePackage{subfig}
+\RequirePackage{caption}
 \captionsetup{hypcap=true}
 
 \RequirePackage{amsthm}
