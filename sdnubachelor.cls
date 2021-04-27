@@ -81,6 +81,9 @@
 \renewcommand {\thefigure} {\thesection{}-\arabic{figure}}
 \renewcommand {\thetable} {\thesection{}-\arabic{table}}
 
+\newsavebox\CBox
+\def\textBF#1{\sbox\CBox{#1}\resizebox{\wd\CBox}{\ht\CBox}{\textbf{#1}}}
+
 \RequirePackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
