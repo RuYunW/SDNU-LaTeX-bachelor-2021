@@ -35,6 +35,10 @@
 
 \RequirePackage{tabu}
 \RequirePackage{makecell}
+\RequirePackage{amssymb}
+\RequirePackage{amsmath}
+\RequirePackage{bm}
+\usepackage{gbt7714}
 
 \DeclareRobustCommand{\xiaosi}{\fontsize{12pt}{\baselineskip}\selectfont}  
 \DeclareRobustCommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}  
@@ -87,7 +91,7 @@
 \RequirePackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[C]{山东师范大学学士学位论文}
+\fancyhead[C]{山东师范大学学士学位设计}
 \fancyfoot[RO, LE]{\thepage}
 
 \RequirePackage{titletoc}
