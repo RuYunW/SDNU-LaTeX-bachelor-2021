@@ -11,6 +11,18 @@
 
 ------
 
+### 快速开始
+
+1. 文件 `sdnubachelor.tex` 中有两处需要您修改，分别位于**信息部分**（个人信息及格式选项）和**摘要部分**（个人信息）；
+2. 在 `./data/resource/abstract.tex`撰写摘要；
+3. 在 `./data/resource/article.tex` 撰写正文；
+3. 在 `./data/resource/bibliography.tex`中撰写参考文件，并可在正文中引用。
+4. 在 `./data/resource/appendix.tex` 中撰写附录；
+5. 在 `./data/resource/thanks.tex` 中撰写致谢；
+6. 数字加粗请使用`\textBF{·}`命令包裹。
+
+---
+
 ### 版本说明
 此版本符合最新山东师范大学本科生学位论文基本格式要求（2021），版本号V1.1。
 
@@ -35,18 +47,7 @@
 
 ---
 
-### 快速开始
-
-1. 文件 `sdnubachelor.tex` 中有两处需要您修改，分别位于**信息部分**（个人信息及格式选项）和**摘要部分**（个人信息）；
-2. 在 `./data/resource/abstract.tex`撰写摘要；
-3. 在 `./data/resource/article.tex` 撰写正文；
-3. 在 `./data/resource/bibliography.tex`中撰写参考文件，并可在正文中引用。
-4. 在 `./data/resource/appendix.tex` 中撰写附录；
-5. 在 `./data/resource/thanks.tex` 中撰写致谢；
-6. 数字加粗请使用`\textBF{·}`命令包裹。
-
-
-#### 目录说明
+### 目录说明
 
 - 本文件所在目录为模版主目录，包含 `sdnubachelor.cls` 格式文件与 `sdnubachelor.tex` 源文件以及编译生成的 PDF 文件。
 - `./data/img/` 目录为正文图片存储目录。
