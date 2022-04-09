@@ -1,6 +1,6 @@
 ## 山东师范大学-本科毕业论文-LaTeX模板v1.1说明
 
-**2022年4月9日 更新**   
+<a id="update20220409">**2022年4月9日 更新** </a>  
 **摘要：** 新增GB/T.2015格式bib引用方式  
 **使用方法：**  
 1. 注释`sdnubachelor.tex`第78-80行代码；  
@@ -16,7 +16,7 @@
 1. 文件 `sdnubachelor.tex` 中有两处需要您修改，分别位于**信息部分**（个人信息及格式选项）和**摘要部分**（个人信息）；
 2. 在 `./data/resource/abstract.tex`撰写摘要；
 3. 在 `./data/resource/article.tex` 撰写正文；
-3. 在 `./data/resource/bibliography.tex`中撰写参考文件，并可在正文中引用。
+3. 在 `./data/resource/bibliography.tex`中撰写参考文件，并在正文中引用（若您熟悉bib使用，请参考[2022年4月9日更新说明](#update20220409)启用bib）；
 4. 在 `./data/resource/appendix.tex` 中撰写附录；
 5. 在 `./data/resource/thanks.tex` 中撰写致谢；
 6. 数字加粗请使用`\textBF{·}`命令包裹。
