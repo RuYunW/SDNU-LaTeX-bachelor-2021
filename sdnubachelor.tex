@@ -49,7 +49,7 @@
 	\pagenumbering{roman}  % Alph（alph） / Roman（roman）  摘要页码形式，字母或者罗马数字，看个人喜好
 	\include{data/resource/abstract}
 	
-	\ifthenelse{\sdnuprint=1}{\ifthenelse{\equal{\pageref{abstract}}{A}}{\pagestyle{empty}~\newpage}{}}{}
+	\ifthenelse{\sdnuprint=1}{\ifthenelse{\equal{\pageref{abstract}}{i}}{\pagestyle{empty}~\newpage}{}}{}
 	
 %	\pageref{unknown}=A {\pagestyle{empty}~\newpage}
 
@@ -71,6 +71,7 @@
 		\captionsetup{font={small,stretch=1.25}, justification=centering}
 		\setlength{\baselineskip}{25pt}
 		\include{data/resource/article}
+		\ifthenelse{\sdnuprint=1}{\ifthenelse{\isodd{\pageref{article}}}{\pagestyle{fancy}~\newpage}{}}{}
 	}
 
 \titleformat{\section}{\centering\Large\bfseries}{}{0pt}{}[\vspace*{10pt}]
@@ -86,12 +87,14 @@
 
 %---附录引入部分，修改附录内容请修改./data/resource/appendix.tex，无需附录请注释\include部分--
 	{
+		\ifthenelse{\sdnuprint=1}{\ifthenelse{\isodd{\pageref{appendix}}}{}{\pagestyle{fancy}~\newpage}}{}
 		\include{data/resource/appendix}
 	}
 
 %--致谢部分，修改致谢内容请修改./data/resource/thanks.tex，无需附录请注释\include部分--
 	{
-	\include{data/resource/thanks}
+		\ifthenelse{\sdnuprint=1}{\ifthenelse{\isodd{\pageref{thanks}}}{}{\pagestyle{fancy}~\newpage}}{}
+		\include{data/resource/thanks}
 	}
 
 
