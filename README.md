@@ -24,7 +24,7 @@
 ---
 
 ### 版本说明
-此版本符合最新山东师范大学本科生学位论文基本格式要求（2021），版本号V1.1。
+此版本符合最新山东师范大学本科生学位论文基本格式要求（2022），版本号V1.1。
 
 感谢前辈 SmartHelium 学长，2018版本请前往 [SmartHelium sdnubachelor](https://github.com/SmartHelium/sdnubachelor)。
 
